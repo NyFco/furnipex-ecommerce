@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Dining",
+    "image": "https://img.freepik.com/free-photo/room-interior-design_23-2148899449.jpg?w=740&t=st=1705305869~exp=1705306469~hmac=6de622e30706959b6ef3444cafdcf4ade27700db4f5eb7445217998ef7f4e777",
+    "route": "products/dining"
+  },
+  {
+    "title": "Living",
+    "image": "https://img.freepik.com/free-photo/gray-sofa-white-living-room-interior-with-copy-space-3d-rendering_43614-802.jpg?w=1380&t=st=1705315002~exp=1705315602~hmac=eb3183faa4499e21638840ec6451c991d7e95a137ec3eb57743fcb8e3bd2785b",
+    "route": "products/living"
+  },
+  {
+    "title": "Bedroom",
+    "image": "https://img.freepik.com/free-photo/comfortable-modern-bedroom-with-elegant-wood-headboard-generated-by-ai_24640-87460.jpg?t=st=1705314836~exp=1705318436~hmac=760db985e63a16df98367f446c13acc2bc4eaa96499ffea72363e3a03b6e39ab&w=1380",
+    "route": "products/bedroom"
+  }
+]

@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import HeroSection from "./components/heroSection";
+import RangeSection from "./components/rangeSection";
 import "./styles/globals.scss";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main>
       <Header />
       <HeroSection />
+      <RangeSection />
     </main>
   );
 }
