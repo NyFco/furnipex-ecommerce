@@ -1,0 +1,49 @@
+@import "./colors";
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    background-color: #fff3e3b2;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 40px;
+    margin-block: 100px;
+
+    @media (max-width: 1000px) {
+      margin: 20px;
+    }
+
+    h1 {
+      color: $primary;
+      font-size: 52px;
+    }
+
+    p {
+      color: $text;
+    }
+
+    button {
+      background-color: $primary;
+      font-size: 18px;
+      color: #ffffff;
+      padding: 10px 40px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
