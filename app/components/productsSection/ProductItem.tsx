@@ -2,6 +2,7 @@ import { ProductType } from "@/app/hooks/useProducts";
 import Image from "next/image";
 import { FunctionComponent } from "react";
 import Label from "./Label";
+import HoverOverlay from "./HoverOverlay";
 
 interface ProductProps {
   product: ProductType;
@@ -9,6 +10,7 @@ interface ProductProps {
 
 const ProductItem: FunctionComponent<ProductProps> = ({
   product: {
+    id,
     title,
     images,
     price,
@@ -20,6 +22,7 @@ const ProductItem: FunctionComponent<ProductProps> = ({
 }) => {
   return (
     <li className="item">
+      <HoverOverlay href={`products/${id}`} />
       {isNew ? (
         <Label type="new" />
       ) : (
