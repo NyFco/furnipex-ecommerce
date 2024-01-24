@@ -7,6 +7,7 @@ export interface ProductType {
   price: number;
   prev_price?: number;
   discount?: number;
+  isNew?: boolean;
   short_description: string;
   description: string;
 }
