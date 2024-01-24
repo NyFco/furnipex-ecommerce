@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "cdn.pixabay.com",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "assets.wfcdn.com",
+        pathname: "**",
+      },
     ],
   },
 };

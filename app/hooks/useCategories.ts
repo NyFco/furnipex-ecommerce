@@ -1,6 +1,6 @@
 import axios from "axios";
 
-interface CategoryType {
+export interface CategoryType {
   title: string;
   image: string;
   route: string;
