@@ -1,0 +1,63 @@
+@import "./colors.scss";
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    .item {
+      list-style: none;
+      background-color: $itemBG;
+      display: flex;
+      flex-direction: column;
+
+      .details {
+        padding: 10px;
+
+        .item-title {
+          font-size: 25px;
+        }
+
+        .desc {
+          color: $secondary-text;
+          font-size: 15px;
+          font-weight: 100;
+        }
+
+        .price-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: 800;
+
+          .price {
+            font-size: 25px;
+          }
+
+          .prev-price {
+            text-decoration: line-through;
+            color: $non-important-text;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .more-btn {
+    background-color: #ffffff;
+    border: 2px solid $primary;
+    color: $primary;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 15px 30px;
+  }
+}

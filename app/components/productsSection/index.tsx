@@ -8,6 +8,7 @@ const ProductsSection: FunctionComponent = () => {
     <section className="products">
       <Title>Our Products</Title>
       <ProductsList />
+      <button className="more-btn">Show More</button>
     </section>
   );
 };
