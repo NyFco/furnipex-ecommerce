@@ -1,3 +1,4 @@
+import Footer from "./components/footer";
 import Header from "./components/header";
 import HeroSection from "./components/heroSection";
 import ProductsSection from "./components/productsSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <RangeSection />
       <ProductsSection />
+      <Footer />
     </main>
   );
 }
