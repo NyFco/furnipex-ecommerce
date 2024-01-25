@@ -21,7 +21,7 @@ const Card: FunctionComponent<CardProps> = ({
   return (
     <li>
       <Link href={href} className={`card ${poppins.className}`}>
-        <Image src={imgSrc} alt={alt} width={400} height={500} />
+        <Image src={imgSrc} alt={alt} width={350} height={450} />
         <h4>{title}</h4>
       </Link>
     </li>
