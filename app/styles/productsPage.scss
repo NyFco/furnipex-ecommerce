@@ -1,0 +1,9 @@
+.products-page {
+  .list {
+    padding: 25px 100px;
+
+    @media (max-width: 1000px) {
+      padding: 25px;
+    }
+  }
+}

@@ -4,6 +4,8 @@ import useProducts, { ProductType } from "@/app/hooks/useProducts";
 import { FunctionComponent } from "react";
 import axios from "axios";
 import Action from "./Action";
+import Gallery from "./Gallery";
+import Breadcrumb from "@/app/components/breadcrumb";
 
 type ParamsType = {
   id: number;
@@ -36,8 +38,11 @@ const ProductPage: FunctionComponent<ProductPageProps> = async ({
 
   return (
     <main className="product-page">
+      <Breadcrumb path={`Products/${product.title}`} />
       <section className="review-section">
-        <div className="image-container">Images</div>
+        <div className="image-container">
+          <Gallery images={product.images} alt={product.title} />
+        </div>
         <div className="details-container">
           <h1 className="product-title">{product.title}</h1>
           <div className="price-container">
