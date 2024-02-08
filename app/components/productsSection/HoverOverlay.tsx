@@ -11,7 +11,11 @@ interface HoverOverlayProps {
 const HoverOverlay: FunctionComponent<HoverOverlayProps> = ({ href }) => {
   return (
     <div className="hover-overlay">
-      <Link href={href} className={`${poppins.className} view-btn`}>
+      <Link
+        href={href}
+        target="_blank"
+        className={`${poppins.className} view-btn`}
+      >
         View item
       </Link>
     </div>

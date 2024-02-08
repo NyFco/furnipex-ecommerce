@@ -20,8 +20,16 @@ const useProducts = () => {
         .catch((err) => reject(err));
     });
 
+  const getProduct = async (id: number): Promise<ProductType> =>
+    new Promise<ProductType>((resolve, reject) => {
+      axios(`http://localhost:3000/api/products/${id}`)
+        .then(({ data }) => resolve(data))
+        .catch((err) => reject(err));
+    });
+
   return {
     getProducts,
+    getProduct,
   };
 };
 

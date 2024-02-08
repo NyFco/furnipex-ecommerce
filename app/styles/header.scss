@@ -53,7 +53,6 @@
     .burgerBtn {
       background: none;
       border: none;
-      cursor: pointer;
     }
 
     .mobileMenuContainer {
@@ -90,7 +89,7 @@
       }
     }
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1001px) {
       display: none;
     }
   }

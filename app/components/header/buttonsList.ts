@@ -6,11 +6,11 @@ interface HeaderItem {
 const headerItems: HeaderItem[] = [
   {
     title: "Home",
-    link: "#",
+    link: "/",
   },
   {
     title: "Shop",
-    link: "#",
+    link: "/products",
   },
   {
     title: "About",

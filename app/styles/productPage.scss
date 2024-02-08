@@ -1,0 +1,125 @@
+@import "./colors.scss";
+
+.product-page {
+  section {
+    padding: 25px 100px;
+  }
+
+  .review-section {
+    display: flex;
+    gap: 25px;
+
+    .image-container {
+      flex: 1;
+
+      .product-gallery {
+        display: flex;
+        gap: 50px;
+
+        .selectables {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          button {
+            background-color: #ffffff;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .details-container {
+      flex: 1;
+
+      .product-title {
+        font-size: 42px;
+        margin: 0;
+      }
+
+      .price-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h3 {
+          margin: 0;
+        }
+
+        .price {
+          font-size: 24px;
+        }
+
+        .prev-price {
+          text-decoration: line-through;
+          color: $secondary-text;
+        }
+      }
+
+      .description {
+        margin-block: 30px;
+      }
+
+      .action-container {
+        display: flex;
+        gap: 24px;
+
+        .amount-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100px;
+          border: 2px solid #9f9f9f;
+          border-radius: 12px;
+          padding: 15px;
+          font-weight: 900;
+
+          button {
+            background-color: #ffffff;
+            border: none;
+            font-size: 20px;
+          }
+        }
+
+        .addToCart-btn {
+          font-size: 22px;
+          background-color: #ffffff;
+          border: 2px solid #000000;
+          border-radius: 12px;
+          padding: 12px 32px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 960px) {
+    section {
+      padding: 25px;
+    }
+
+    .review-section {
+      flex-direction: column;
+      justify-content: center;
+
+      .image-container {
+        .product-gallery {
+          flex-direction: column-reverse;
+          gap: 25px;
+          align-items: center;
+
+          .selectables {
+            flex-direction: row;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+}

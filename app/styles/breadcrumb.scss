@@ -1,0 +1,28 @@
+@import "./colors.scss";
+
+.breadcrumb {
+  background-color: $secondary;
+  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @media (max-width: 960px) {
+    padding: 25px;
+  }
+
+  .path-link {
+    text-decoration: none;
+    color: $secondary-text;
+  }
+
+  span {
+    &.last {
+      font-weight: 600;
+    }
+
+    &.seperator {
+      font-weight: 900;
+    }
+  }
+}
